@@ -22,8 +22,11 @@ nav{
     height: 80px;
     margin: 20px;
     box-shadow:0 12px 6px rgb(0 0 0 / 30%) ;
-    
-}
+    background-color: #ffffff;
+    position: fixed;
+    width: 97%;
+    }
+
 
 
 #navigation{
@@ -33,20 +36,12 @@ align-items: center;
 justify-content: space-around;
 padding: 1% 0%;
 height: 50px;
-width: 100%;
 font-size: 14px;
-color: mediumseagreen;
-}
+color: mediumseagreen;}
 
-#logo_bubble{
-    width: 80px;
-    /* height: 70px; */
-}
+#logo_bubble{width: 80px;}
 
-.liste_navigation:hover, a:focus {
-    /* background-color: white; */
-    color:#525050;    
-}
+.liste_navigation:hover, a:focus {color:#525050;}
 
 .liste_navigation {
     /* border: solid turquoise 4px; */
@@ -55,14 +50,18 @@ color: mediumseagreen;
     padding: 10px 8px;
     }
 
-.icon{
-    width: 30px;
-    /* border: solid aqua 4px; */
-    /* background-color: white; */
-
-}
+.icon{width: 30px;}
 
 /* barre volante fin */
+
+/* image derrière la barre */
+header{background: no-repeat center/100% url(Images/pexels-rodnae-productions-6412829.jpg);
+    height: 1000px;
+    margin: 0px !important;
+
+    }
+/* image derrière la barre */
+
 
 /* body */
 #Moment{ 
