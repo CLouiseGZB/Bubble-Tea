@@ -1,7 +1,7 @@
 *{margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    color: #3cb371;
+    color: #CBB57B;
 }
 
 ul{list-style: none;}
@@ -36,12 +36,12 @@ align-items: center;
 justify-content: space-around;
 padding: 1% 0%;
 height: 50px;
-font-size: 14px;
-color: mediumseagreen;}
+font-size: 14px;}
 
 #logo_bubble{width: 80px;}
 
-.liste_navigation:hover, a:focus {color:#525050;}
+.liste_navigation:hover, a:focus {color:#473630;
+    text-decoration:underline;}
 
 .liste_navigation {
     /* border: solid turquoise 4px; */
@@ -52,75 +52,43 @@ color: mediumseagreen;}
 
 .icon{width: 30px;}
 
+.icon:hover, a:focus{color: #473630;
+}
+
 /* barre volante fin */
 
 /* image derrière la barre */
-header{background: no-repeat center/100% url(Images/pexels-rodnae-productions-6412829.jpg);
-    height: 1000px;
+header{background: no-repeat center/100% url(Images/insjoy181201014.png);
+    height: 660px;
     margin: 0px !important;
-
     }
 /* image derrière la barre */
 
+/* intro */
+#titre{
+    /* border: solid fuchsia 4px; */
+    height: fit-content;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 300px 90px;
+    
+}
+
+#titre, h1{color: #473630;
+    text-shadow: 0 12px 6px rgb(0 0 0 / 30%);
+    font-size: 60px;}
+
+#sous_titre{font-size: 40px;
+color:#473630;}
+
+/* intro fin */
 
 /* body */
-#Moment{ 
-    /* border: solid black 4px; */
-    height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+.intro{display: flex; align-items:center; justify-content: space-around; margin: 100px;}
 
-#Bonnet{
-    /* border: solid red 4px; */
-    height: 450px;
-    width: 350px;
-
-}
-
-#sweat_vert{
-    /* border:  solid purple 4px; */
-    height: 450px;
-    width: 350px;
-
-}
-
-#outwear{
-    /* border: solid violet 4px; */
-    height: 450px;
-    width: 350px;
-}
-
-#party{
-    /* border: solid turquoise 4px; */
-    height: 450px;
-    width: 350px;
-}
-
-#Capaldi{
-    max-width: 100%;
-}
-
-#duo{ 
-    /* border: solid black 4px; */
-    height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#basket{
-    /* border: solid pink 4px; */
-    height: 500px;
-    width: 400px;
-}
-
-#silhouette{
-    /* border: solid yellow 4px; */
-    height: 500px;
-    width: 400px;
-}
+.intro img{box-shadow: 12px 12px 6px rgb(0 0 0 / 30%);;}
 
 figure{
     display: flex;
@@ -130,90 +98,17 @@ figure{
     font-size: 35px;
 }
 
-
-/* tableau */
-#tableau{
-    display: flex;
-    justify-content: center;
-
-}
-
-
-table.GeneratedTable {
-  width: 100%;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #ffcc00;
-  border-style: solid;
-  color: #000000;
-}
-
-table.GeneratedTable td, table.GeneratedTable th {
-  border-width: 2px;
-  border-color: #ffcc00;
-  border-style: solid;
-  padding: 3px;
-}
-
-table.GeneratedTable thead {
-  background-color: #e5bff3;
-}
-/* tableau fin */
-
-/* h1 et p */
-#rouge{
-    display: flex;
-    margin-top: 100px;
-}
-
-#xmas{
-    /* border: solid salmon 4px; */
-    display: flex;
-    flex-direction: column;
-    width:  50%;
-    font-size: 20px;
-    margin-left: 40px;
-}
-
-p, #xmas{
-    font-size: 20px;
-}
-
-#xmas_robe{
-    width: 50%;
-    /* border: solid crimson 3px; */
-}
-
-h2{margin: 30px;
-    font-size: 20px;
-}
-
-#btn_robe{
-    background-color: #2D2D2D;
-    border: solid 0px;
-    color: #ffffff;
-    border-radius: 18px;
-    width: 180px;
-    height: 50px;
-    margin: 10px;
-    font-size: 20px;
-}
-
-#btn_robe:hover, #btn_robe:focus{
-    background-color: #525050;
-    color: #ffffff;
-}
-/* h1 et p fin */
-
+figcaption:hover{color: #473630;
+text-decoration: underline;
+transition: 0.4s ease-out;}
 
 
 /* body fin */
 
 /* footer */
 footer{
-    background-color: #2D2D2D;
-    color: white;
+    background-color: #473630;
+    font-size: large;
     display: flex;
     align-items: center;
     justify-content: center;
