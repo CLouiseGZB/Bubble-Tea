@@ -72,13 +72,37 @@ header{background: no-repeat center/100% url(Images/insjoy181201014.png);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 300px 90px;
+    padding: 150px 90px;
     
 }
 
 #titre, h1{color: #473630;
     text-shadow: 0 12px 6px rgb(0 0 0 / 30%);
     font-size: 60px;}
+
+/* formulaire */
+.formulaire{
+    background-color: white;
+    height: 200px;
+    width: 450px;
+    padding: 24px;
+    line-height: 20px;
+    border: #473630 solid 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{font-size: small;
+text-shadow: none;}
+
+#nom, #city{
+    width: 450px;
+    height: 40px;
+    padding: 19px 8px;
+}
+
+/* formulaire */
 
 #sous_titre{font-size: 40px;
 color:#473630;}
@@ -88,7 +112,7 @@ color:#473630;}
 /* body */
 .intro{display: flex; align-items:center; justify-content: space-around; margin: 100px;}
 
-.intro img{box-shadow: 12px 12px 6px rgb(0 0 0 / 30%);;}
+.intro img{box-shadow: 12px 12px 6px rgb(0 0 0 / 30%);}
 
 figure{
     display: flex;
