@@ -2,6 +2,7 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     color: #CBB57B;
+    box-sizing: border-box; /* Ajout de la boîte englobante pour les marges et les paddings */
 }
 
 ul{list-style: none;}
@@ -23,52 +24,52 @@ nav{
     margin: 20px;
     box-shadow:0 12px 6px rgb(0 0 0 / 30%) ;
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
     position: fixed;
+    top: 0; /* Ajout de l'ancrage en haut de la page */
     width: 97%;
-    }
-
-
+}
 
 #navigation{
-    /* border: solid fuchsia 4px; */
+/* border: solid fuchsia 4px; */
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-evenly;
 padding: 1% 0%;
 height: 50px;
-font-size: 14px;}
+width: 100%;
+}
 
-#logo_bubble{width: 80px;}
+#logo_bubble{width: 70px;}
 
 .liste_navigation:hover, a:focus {color:#473630;
     text-decoration:underline;}
 
 .liste_navigation {
     /* border: solid turquoise 4px; */
-    width: 80px;
-    font-size: 20px;
+    /* width: 30%; */
+    /* font-size: 3vh; */
     padding: 10px 8px;
     }
-
-.icon{width: 30px;}
-
-.icon:hover, a:focus{color: #473630;
-}
 
 /* barre volante fin */
 
 /* image derrière la barre */
 header{background: no-repeat center/100% url(Images/insjoy181201014.png);
-    height: 660px;
-    margin: 0px !important;
+    height: 100vh;
+    /* width: 99vw !important; */
+    /* border: #CBB57B solid 4px; */
     }
+
 /* image derrière la barre */
 
 /* intro */
 #titre{
     /* border: solid fuchsia 4px; */
     height: fit-content;
-    width: 800px;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,8 +84,8 @@ header{background: no-repeat center/100% url(Images/insjoy181201014.png);
 /* formulaire */
 .formulaire{
     background-color: rgba(255, 255, 255, 0.7);
-    height: 200px;
-    width: 450px;
+    height: 30%;
+    width: 90%;
     padding: 24px;
     line-height: 20px;
     /* border: #473630 solid 4px; */
@@ -97,23 +98,28 @@ label{font-size: small;
 text-shadow: none;}
 
 #nom, #city{
-    width: 450px;
+    width: 25vw;
     height: 40px;
     padding: 19px 8px;
+    /* border: #473630 solid 3px; */
 }
 
 #btnsubmit{
     color: #473630;
-    background-color: #CBB57B;
-    border: none;
+    border: solid 1px #473630;
     height: 30px;
     width: 100px;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 3px;
 }
 
-/* formulaire */
+/* formulaire fin */
+.imgrelative img{
+    width: 25vw;
+    /* border: red solid 3px; */
+}
 
 #sous_titre{font-size: 40px;
 color:#473630;}
@@ -121,7 +127,11 @@ color:#473630;}
 /* intro fin */
 
 /* body */
-.intro{display: flex; align-items:center; justify-content: space-around; margin: 100px;}
+.intro{display: flex; 
+  align-items:center; 
+  justify-content: space-around; 
+  margin: 100px;
+}
 
 .intro img{box-shadow: 12px 12px 6px rgb(0 0 0 / 30%);}
 
@@ -137,6 +147,238 @@ figcaption:hover{color: #473630;
 text-decoration: underline;
 transition: 0.4s ease-out;}
 
+@media screen and (max-width: 1200px) {
+    #titre{
+      width: 90%;
+      padding: 100px;
+    }
+  
+    /* .liste_navigation {
+        font-size: 20px;
+    } */
+
+    header{height: 100%;}
+
+    #titre, h1{
+      font-size: 50px;
+    }
+  
+    .intro{
+      margin: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    #titre{
+      width: 100%;
+      padding: 50px;
+    }
+  
+    #titre, h1{
+      font-size: 40px;
+    }
+  
+    header{height: 100%;}
+
+    #logo_bubble{
+      height: 60px;
+      width: 60px;
+    }
+
+    .intro{
+      margin: 30px;
+    }
+  
+    .formulaire{
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 730px) {
+    #titre{
+      width: 100%;
+      padding: 30px;
+    }
+  
+    #titre, h1{
+      font-size: 30px;
+    }
+  
+    header{height: 100%;}
+
+    .liste_navigation {
+        font-size: 18px;
+    }
+
+    .intro{
+      margin: 20px;
+    }
+  
+    #logo_bubble{
+      height: 50px;
+      width: 50px;
+    }
+
+    .formulaire{
+      width: 100%;
+    }
+  
+    #nom, #city{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 696px) {
+    #titre{
+      width: 100%;
+      padding: 30px;
+    }
+  
+    #titre, h1{
+      font-size: 30px;
+    }
+  
+    header{height: 100%;}
+
+    .liste_navigation {
+        font-size: 18px;
+    }
+
+    .intro{
+      margin: 20px;
+    }
+
+    #logo_bubble{
+      height: 50px;
+      width: 50px;
+    }
+  
+    .formulaire{
+      width: 100%;
+    }
+  
+    #nom, #city{
+      width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 648px) {
+    #titre {
+      width: 100%;
+      /* padding: 100px 20px; */
+    }
+
+    nav{height: 60px;}
+  
+    header{height: 100%;}
+
+    .liste_navigation {
+        font-size: 17px;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    #titre {
+      width: 100%;
+      /* padding: 100px 20px; */
+    }
+
+    nav{height: 60px;}
+  
+    header{height:100% !important;
+    width: 100%;
+    margin: 0;
+    /* border: #473630 solid 2px; */
+  }
+
+    .liste_navigation {
+        font-size: 15px;
+    }
+
+#logo_bubble{
+  height: 50px;
+  width: 50px;
+}
+
+.icon{
+  height: 30px;
+  width: 30px;
+}
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .intro{
+        width: 100%;
+        /* border: solid pink 3px; */
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+
+    }
+
+    .imgrelative{
+        /* border: solid turquoise 2px; */
+        width: 100%;
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .imgrelative img{
+        /* border: yellow 3px; */
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 544px) and (min-width: 480px) {
+    #titre {
+      width: 100%;
+      /* padding: 100px 20px; */
+    }
+
+    nav{height: 60px;}
+  
+    header{height: fit-content;
+    width: 100%;
+  }
+    
+
+    .liste_navigation {
+        font-size: 14px;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    #titre {
+      width: 100%;
+      /* padding: 100px 20px; */
+    }
+
+    nav{height: 60px;}
+  
+    header{height: fit-content;
+      /* background-color: #CBB57B; */
+    width: 100%;
+  }
+    
+
+    .liste_navigation {
+        font-size: 15px;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+  }
 
 /* body fin */
 
@@ -150,4 +392,8 @@ footer{
     height: 300px;
     margin-top: 50px;
     }
+
+.icon{width: 30px;}
+
  /*footer fin */ 
+
